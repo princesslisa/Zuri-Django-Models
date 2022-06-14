@@ -11,5 +11,7 @@ class Post(models.Model):
     Author = models.ForeignKey(User, on_delete=models.CASCADE)
     Created_date = models.DateTimeField()
     Published_date = models.DateTimeField()
+
     def __str__(self):
         return self.Title
+    
